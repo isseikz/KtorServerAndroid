@@ -9,7 +9,7 @@ import io.ktor.server.engine.embeddedServer
 import io.ktor.server.jetty.Jetty
 
 object KtorServerObject {
-    fun start(port: Int = 8080) {
+    internal fun start(port: Int = 8080) {
         embeddedServer(Jetty, port) {
             routing {
                 get("/") {
